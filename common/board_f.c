@@ -889,7 +889,7 @@ static const init_fnc_t init_sequence_f[] = {
 #if defined(CONFIG_DISPLAY_BOARDINFO)
 	show_board_info,
 #endif
-#if definef(CONFIG_DESCRIPTION)
+#if defined(CONFIG_DESCRIPTION)
 	show_description,
 #endif
 	INIT_FUNC_WATCHDOG_INIT
