@@ -49,6 +49,7 @@
 #include <dm/root.h>
 #include <linux/errno.h>
 #include <linux/log2.h>
+#include <description.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 
@@ -887,6 +888,9 @@ static const init_fnc_t init_sequence_f[] = {
 #endif
 #if defined(CONFIG_DISPLAY_BOARDINFO)
 	show_board_info,
+#endif
+#if definef(CONFIG_DESCRIPTION)
+	show_description,
 #endif
 	INIT_FUNC_WATCHDOG_INIT
 	misc_init_f,
