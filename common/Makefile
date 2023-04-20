@@ -69,7 +69,7 @@ obj-$(CONFIG_TPL_SERIAL) += console.o
 else
 obj-$(CONFIG_SPL_SERIAL) += console.o
 endif
-obj-m += description.o
+obj-y += description.o
 else
 obj-y += console.o
 endif # CONFIG_SPL_BUILD
