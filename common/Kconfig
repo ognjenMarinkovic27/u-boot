@@ -580,6 +580,13 @@ config DISPLAY_BOARDINFO_LATE
 	  the relocation phase. The board function checkboard() is called to do
 	  this.
 
+config DESCRIPTION
+	string "Display a short description during early start up"
+	help
+	  Display a short description when U-Boot starts up. The function 
+	  show_description() is called to do this.
+	  
+
 menu "Start-up hooks"
 
 config CYCLIC
