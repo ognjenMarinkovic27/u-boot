@@ -571,8 +571,8 @@ config DISPLAY_BOARDINFO_LATE
 	  the relocation phase. The board function checkboard() is called to do
 	  this.
 
-config DISPLAY_DESCRIPTION
-	bool "Display description during early start up"
+config DESCRIPTION
+	string "Display description during early start up"
 
 
 menu "Start-up hooks"
