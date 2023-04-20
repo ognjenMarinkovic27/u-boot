@@ -17,6 +17,7 @@
 #include <cpu.h>
 #include <cpu_func.h>
 #include <cyclic.h>
+#include <description.h>
 #include <display_options.h>
 #include <dm.h>
 #include <env.h>
@@ -884,6 +885,9 @@ static const init_fnc_t init_sequence_f[] = {
 #endif
 #if defined(CONFIG_DISPLAY_BOARDINFO)
 	show_board_info,
+#endif
+#if defined(CONFIG_DESCRIPTION)
+	show_description,
 #endif
 	INIT_FUNC_WATCHDOG_INIT
 	misc_init_f,
