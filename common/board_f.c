@@ -887,7 +887,6 @@ static const init_fnc_t init_sequence_f[] = {
 	show_board_info,
 #endif
 #if defined(CONFIG_DESCRIPTION)
-	#error "test"
 	show_description,
 #endif
 	INIT_FUNC_WATCHDOG_INIT
