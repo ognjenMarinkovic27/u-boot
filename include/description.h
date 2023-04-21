@@ -1,1 +1,1 @@
-void show_description(void);
+int show_description(void);
